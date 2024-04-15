@@ -79,18 +79,18 @@ const App = () => {
   }
 
   return (
-    <div className="container mx-auto mt-20">
-      <h1 className="text-2xl font-semibold mb-4">Swap anything, anywhere</h1>
+    <div className="px-80 mx-auto mt-60">
+      <h1 className="text-4xl font-semibold mb-16 text-center">Swap anything, anywhere</h1>
       <div className="flex mb-4">
         <input
           type="number"
-          className="border border-gray-300 p-2 mr-2 w-1/2 rounded"
-          placeholder="Enter amount to swap"
+          className="border border-gray-300 p-3 mr-2 w-1/2 rounded"
+          placeholder="You pay"
           value={inputAmount}
           onChange={handleInputChange}
         />
         <select
-          className="border border-gray-300 p-2 w-1/2 rounded"
+          className="border border-gray-300 p-3 w-1/2 rounded"
           value={inputToken}
           onChange={
             handleInputTokenChange
@@ -111,13 +111,13 @@ const App = () => {
       <div className="flex mb-4">
         <input
           type="number"
-          className="border border-gray-300 p-2 mr-2 w-1/2 rounded"
-          placeholder="Estimated output amount"
+          className="border border-gray-300 p-3 mr-2 w-1/2 rounded"
+          placeholder="You recieve"
           value={outputAmount}
           readOnly
         />
         <select
-          className="border border-gray-300 p-2 w-1/2 rounded"
+          className="border border-gray-300 p-3 w-1/2 rounded"
           value={outputToken}
           onChange={handleOutputTokenChange}
         >
